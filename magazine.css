@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.mag-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 1px solid #eee;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.mag-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.mag-logo span {
+    font-weight: 400;
+    font-size: 14px;
+    color: #ae8e46;
+    display: block;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.back-home {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.mag-socials a {
+    color: #333;
+    margin-left: 15px;
+}
+
+
+.mag-hero {
+    position: relative;
+    padding: 60px 5%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-image-container {
+    width: 65%;
+    height: 600px;
+}
+
+.hero-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text-box {
+    width: 40%;
+    background: white;
+    padding: 50px;
+    position: absolute;
+    right: 5%;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
+}
+
+.category {
+    color: #ae8e46;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hero-text-box h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    border-bottom: 2px solid #ae8e46;
+    padding-bottom: 5px;
+}
+
+.mag-grid-container {
+    padding: 80px 5%;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+    font-size: 28px;
+}
+
+.mag-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.mag-card {
+    transition: transform 0.3s ease;
+}
+
+.mag-card:hover {
+    transform: translateY(-10px);
+}
+
+.mag-card-img {
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.mag-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mag-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.mag-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.mag-card a {
+    text-decoration: none;
+    color: #ae8e46;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Footer */
+.mag-footer {
+    padding: 50px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: #999;
+}
+/* Offers Grid Layout */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 5%;
+}
+
+.offer-card-v2 {
+    background: #fff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.offer-image-wrapper {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.offer-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.offer-card-v2:hover .offer-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 60%, rgba(0,0,0,0.5));
+}
+
+.offer-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ae8e46;
+    color: #fff;
+    padding: 6px 12px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.offer-info {
+    padding: 30px 0;
+    text-align: left;
+}
+
+.offer-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.offer-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    height: 45px; 
+    overflow: hidden;
+}
+
+.gold-link {
+    text-decoration: none;
+    color: #ae8e46;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gold-link i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.gold-link:hover {
+    border-bottom: 1px solid #ae8e46;
+    padding-bottom: 3px;
+}
+
+@media (max-width: 992px) {
+    .offers-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+}
